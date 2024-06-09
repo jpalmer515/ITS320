@@ -1,0 +1,58 @@
+CTA1_Option2
+
+x = int(input("enter one number: "))
+y = int(input("enter another number: "))
+print(x // y)
+print(x / y)
+print(x % y)
+
+CTA2_Option2
+
+cars = {'brand': ['Alpina', 'BMW'], 'model': ['B7', 'M3'], 'year': ['2021', '2025'], 'start_odo': ['500', '15'], 'end_odo': ['600', '99'], 'est_mpg': ['10', '36']}
+
+a, b, c, d, e, f = input("Enter vehicle brand, model, year, starting odometer, ending odometer and estimated mpg:").split(",")
+
+if 'brand' in cars:
+    cars['brand'].append(a)
+
+if 'model' in cars:
+    cars['model'].append(b)
+
+if 'year' in cars:
+    cars['year'].append(c)
+
+if 'start_odo' in cars:
+    cars['start_odo'].append(d)
+
+if 'end_odo' in cars:
+    cars['end_odo'].append(e)
+
+if 'est_mpg' in cars:
+    cars['est_mpg'].append(f)
+
+print(cars)
+
+CTA3_Option1
+
+year = input("Enter Vehicle Year:")
+
+if int(year) < 1962:
+    print("Too old!")
+elif int(year) in range(1962, 1965):
+    print("$18,500")
+elif int(year) in range(1965, 1969):
+    print("$6,000")
+elif int(year) in range(1969, 1972):
+    print("$12,000")
+elif int(year) in range(1972, 1976):
+    print("$48,000")
+elif int(year) in range(1976, 1981):
+    print("$200,000")
+elif int(year) in range(1981, 1986):
+    print("$650,000")
+elif int(year) in range(1986, 2013):
+    print("$35,000,000")
+elif int(year) in range(2013, 2015):
+    print("$52,000,000")
+else:
+    print("Invaluable")
